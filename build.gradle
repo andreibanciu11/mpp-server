@@ -47,10 +47,8 @@ tasks.named('test') {
 }
 
 bootJar {
-	archiveFileName = 'MyApplication.jar' // Name of the executable jar
+	archiveFileName = 'MyApplication.jar'
 	manifest {
-		attributes(
-				'FootballNewsServerApplication': 'com.example.footballnewsserver' // Ensure your main class is correctly pointed here
-		)
+		attributes('Main-Class': 'com.example.footballnewsserver.FootballNewsServerApplication')
 	}
 }
